@@ -3,6 +3,7 @@ About r-spatstat.model-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-spatstat.model-feedstock/blob/main/LICENSE.txt)
 
+
 About r-spatstat.model
 ----------------------
 
@@ -11,6 +12,7 @@ Home: http://spatstat.org/
 Package license: GPL-2.0-or-later
 
 Summary: Functionality for exploratory data analysis and nonparametric analysis of spatial data, mainly spatial point patterns, in the 'spatstat' family of packages. (Excludes analysis of spatial data on a linear network, which is covered by the separate package 'spatstat.linnet'.) Methods include quadrat counts, K-functions and their simulation envelopes, nearest neighbour distance and empty space statistics, Fry plots, pair correlation function, kernel smoothed intensity, relative risk estimation with cross-validated bandwidth selection, mark correlation functions, segregation indices, mark dependence diagnostics, and kernel estimates of covariate effects. Formal hypothesis tests of random pattern (chi-squared, Kolmogorov-Smirnov, Monte Carlo, Diggle-Cressie-Loosmore-Ford, Dao-Genton, two-stage Monte Carlo) and tests for covariate effects (Cox-Berman-Waller-Lawson, Kolmogorov-Smirnov, ANOVA) are also supported.
+
 About r-spatstat.model
 ----------------------
 
