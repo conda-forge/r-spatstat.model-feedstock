@@ -31,33 +31,35 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-matrix
     - r-abind
     - r-goftest >=1.2_2
+    - r-matrix
     - r-mgcv
     - r-nlme
     - r-rpart
-    - r-spatstat.data >=3.0
-    - r-spatstat.explore >=3.2_5
-    - r-spatstat.geom >=3.2_7
-    - r-spatstat.random >=3.2_1
-    - r-spatstat.sparse >=3.0
-    - r-spatstat.utils >=3.0_3
+    - r-spatstat.data >=3.0_4
+    - r-spatstat.explore >=3.3_0
+    - r-spatstat.geom >=3.3_0
+    - r-spatstat.random >=3.3_0
+    - r-spatstat.sparse >=3.1_0
+    - r-spatstat.univar >=3.0_0
+    - r-spatstat.utils >=3.0_5
     - r-tensor
   run:
     - r-base
-    - r-matrix
     - r-abind
     - r-goftest >=1.2_2
+    - r-matrix
     - r-mgcv
     - r-nlme
     - r-rpart
-    - r-spatstat.data >=3.0
-    - r-spatstat.explore >=3.2_5
-    - r-spatstat.geom >=3.2_7
-    - r-spatstat.random >=3.2_1
-    - r-spatstat.sparse >=3.0
-    - r-spatstat.utils >=3.0_3
+    - r-spatstat.data >=3.0_4
+    - r-spatstat.explore >=3.3_0
+    - r-spatstat.geom >=3.3_0
+    - r-spatstat.random >=3.3_0
+    - r-spatstat.sparse >=3.1_0
+    - r-spatstat.univar >=3.0_0
+    - r-spatstat.utils >=3.0_5
     - r-tensor
 
 test:
@@ -67,6 +69,7 @@ test:
 
 about:
   home: http://spatstat.org/
+  dev_url: https://github.com/spatstat/spatstat.model
   license: GPL-2.0-or-later
   summary: Functionality for exploratory data analysis and nonparametric analysis of spatial data, mainly spatial point patterns, in the 'spatstat' family of packages. (Excludes analysis of spatial data on a linear network, which is covered by the separate package 'spatstat.linnet'.) Methods include quadrat counts, K-functions
     and their simulation envelopes, nearest neighbour distance and empty space statistics, Fry plots, pair correlation function, kernel smoothed intensity, relative risk estimation with cross-validated bandwidth selection, mark correlation functions, segregation indices, mark dependence diagnostics, and kernel estimates
