@@ -1,4 +1,4 @@
-{% set version = "3.2-10" %}
+{% set version = "3.3-2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spatstat.model_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spatstat.model/spatstat.model_{{ version }}.tar.gz
-  sha256: 2a21a436875b90d24538ce490b97f4e11152c5953ab99a3fedf87a48cbbb8242
+  sha256: 2bda4949fce2da623e2478a02ed06ab503c108e4476fe57c862f2e9f30266a3f
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
