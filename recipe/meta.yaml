@@ -1,4 +1,4 @@
-{% set version = "3.3-3" %}
+{% set version = "3.3-4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spatstat.model_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spatstat.model/spatstat.model_{{ version }}.tar.gz
-  sha256: 2b1247feddd849d11ab80204676697d8cbd6d69f07dddb8158a3d76200d202b5
+  sha256: 948b5344d9ebaa3c54de29750112dd5c67dcb6ddc289af1288c140d5b24d8270
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,7 +36,7 @@ requirements:
     - r-spatstat.random >=3.3_2    # [build_platform != target_platform]
     - r-spatstat.sparse >=3.1_0    # [build_platform != target_platform]
     - r-spatstat.univar >=3.1_1    # [build_platform != target_platform]
-    - r-spatstat.utils >=3.1_1     # [build_platform != target_platform]
+    - r-spatstat.utils >=3.1_2     # [build_platform != target_platform]
     - r-tensor                     # [build_platform != target_platform]
     - {{ compiler('c') }}          # [not win]
     - {{ stdlib("c") }}            # [not win]
@@ -49,9 +49,9 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-matrix
     - r-abind
     - r-goftest >=1.2_2
-    - r-matrix
     - r-mgcv
     - r-nlme
     - r-rpart
@@ -61,13 +61,13 @@ requirements:
     - r-spatstat.random >=3.3_2
     - r-spatstat.sparse >=3.1_0
     - r-spatstat.univar >=3.1_1
-    - r-spatstat.utils >=3.1_1
+    - r-spatstat.utils >=3.1_2
     - r-tensor
   run:
     - r-base
+    - r-matrix
     - r-abind
     - r-goftest >=1.2_2
-    - r-matrix
     - r-mgcv
     - r-nlme
     - r-rpart
@@ -77,7 +77,7 @@ requirements:
     - r-spatstat.random >=3.3_2
     - r-spatstat.sparse >=3.1_0
     - r-spatstat.univar >=3.1_1
-    - r-spatstat.utils >=3.1_1
+    - r-spatstat.utils >=3.1_2
     - r-tensor
 
 test:
