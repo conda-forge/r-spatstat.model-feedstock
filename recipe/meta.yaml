@@ -3,7 +3,7 @@
 
 package:
   name: r-spatstat.model
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -31,12 +31,12 @@ requirements:
     - r-nlme                       # [build_platform != target_platform]
     - r-rpart                      # [build_platform != target_platform]
     - r-spatstat.data >=3.1_9      # [build_platform != target_platform]
-    - r-spatstat.explore >=3.8_0   # [build_platform != target_platform]
-    - r-spatstat.geom >=3.7_3      # [build_platform != target_platform]
-    - r-spatstat.random >=3.4_5    # [build_platform != target_platform]
-    - r-spatstat.sparse >=3.1      # [build_platform != target_platform]
-    - r-spatstat.univar >=3.1_7    # [build_platform != target_platform]
-    - r-spatstat.utils >=3.2_2     # [build_platform != target_platform]
+    - r-spatstat.explore >=3.8_2   # [build_platform != target_platform]
+    - r-spatstat.geom >=3.8_2      # [build_platform != target_platform]
+    - r-spatstat.random >=3.5_1    # [build_platform != target_platform]
+    - r-spatstat.sparse >=3.2_0    # [build_platform != target_platform]
+    - r-spatstat.univar >=3.2_0    # [build_platform != target_platform]
+    - r-spatstat.utils >=3.2_4     # [build_platform != target_platform]
     - r-tensor                     # [build_platform != target_platform]
     - {{ compiler('c') }}          # [not win]
     - {{ stdlib("c") }}            # [not win]
@@ -56,12 +56,12 @@ requirements:
     - r-nlme
     - r-rpart
     - r-spatstat.data >=3.1_9
-    - r-spatstat.explore >=3.8_0
-    - r-spatstat.geom >=3.7_3
-    - r-spatstat.random >=3.4_5
-    - r-spatstat.sparse >=3.1
-    - r-spatstat.univar >=3.1_7
-    - r-spatstat.utils >=3.2_2
+    - r-spatstat.explore >=3.8_2
+    - r-spatstat.geom >=3.8_2
+    - r-spatstat.random >=3.5_1
+    - r-spatstat.sparse >=3.2_0
+    - r-spatstat.univar >=3.2_0
+    - r-spatstat.utils >=3.2_4
     - r-tensor
   run:
     - r-base
@@ -72,12 +72,12 @@ requirements:
     - r-nlme
     - r-rpart
     - r-spatstat.data >=3.1_9
-    - r-spatstat.explore >=3.8_0
-    - r-spatstat.geom >=3.7_3
-    - r-spatstat.random >=3.4_5
-    - r-spatstat.sparse >=3.1
-    - r-spatstat.univar >=3.1_7
-    - r-spatstat.utils >=3.2_2
+    - r-spatstat.explore >=3.8_2
+    - r-spatstat.geom >=3.8_2
+    - r-spatstat.random >=3.5_1
+    - r-spatstat.sparse >=3.2_0
+    - r-spatstat.univar >=3.2_0
+    - r-spatstat.utils >=3.2_4
     - r-tensor
 
 test:
